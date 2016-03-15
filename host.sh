@@ -25,6 +25,6 @@ scutil --set LocalHostName $HOSTNAME
 scutil --set ComputerName $HOSTNAME
 scutil --set HostName $HOSTNAME
 
-# Print the DNS hostname
+# Print the DNS hostname (used for debugging)
 # echo "Hostname set to:" $HOSTNAME
 
