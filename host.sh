@@ -9,7 +9,8 @@ IP="$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*
 
 # Define prefix/suffix to remove from result 
 PREFIX="*.*.*.*.in-addr.arpa domain name pointer "
-SUFFIX=".maxiv.lu.se."
+# Remove domainsuffix from output
+SUFFIX="****"
 
 # Dns lookup of hostname from current IP-Address
 HOST="$(host $IP)"
